@@ -1,0 +1,133 @@
+﻿@{
+    ViewBag.Title = "Insights";
+    Layout = "~/Views/Shared/_LayoutAbout.cshtml";
+}
+
+<!-- banner -->
+<section class="bannr-sec insight-bnnr">
+    <div class="bannr-outr">
+        <div class="container">
+            <div class="bannr-innr wow fadeInUp" data-wow-delay="0.5s">
+                <h1>@ViewBag.position163</h1>
+                <h4>@ViewBag.position164</h4>
+                <!-- <h5>Proin gravida nibh vel velit auctor alique enean sollicitudin</h5> -->
+            </div>
+        </div>
+    </div>
+    <!-- end banner -->
+    <!-- new mouse start -->
+    <div class="ng-scope" id="content-view">
+        <div style="display: block;" class="ng-scope" id="mouse-scroll">
+            <div><span class="unu"> </span> <span class="doi"> </span> <span class="trei"> </span> </div>
+        </div>
+    </div>
+    <!-- new mouse ends -->
+</section>
+<!-- long-term -->
+<section class="hm long-term text-center">
+    <div class="container">
+        <div class="long-outr commn-outr">
+            <p>
+               @ViewBag.position165
+            </p>
+            <!-- <a class="commn-bttn whte wow fadeInUp" data-wow-delay="0.5s" href="javascript:void(0)">read more</a> -->
+        </div>
+    </div>
+</section>
+<!-- end long-term -->
+<!-- insight -->
+<section>
+    <div class="container">
+        <div class="commn-outr clearfix">
+            <div class="com-sm-3 col-md-3">
+                <div class="insight-inn text-center wow fadeInUp">
+                    <a href="@Url.Content("~/Insights/Blog")">
+                        <div class="insight-pic">
+                            <img src="@Url.Content("~/images/insight-blog.jpg")" alt="" />
+                        </div>
+                        <div class="blog-innr">
+                            <h5>@ViewBag.position166</h5>
+                        </div>
+                    </a>
+                    <div class="blog-innr">
+                        <p>
+                           @ViewBag.position167
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- == -->
+            <div class="com-sm-3 col-md-3">
+                <div class="insight-inn text-center wow fadeInUp" data-wow-delay="0.5s">
+                    <a href="@Url.Content("~/Insights/KnowledgeBytes")">
+                        <div class="insight-pic">
+                            <img src="@Url.Content("~/images/insight-knowledge.jpg")" alt="" />
+                        </div>
+                        <div class="blog-innr">
+                            <h5>@ViewBag.position168</h5>
+                        </div>
+                    </a>
+                    <div class="blog-innr">
+                        <p>
+                            @ViewBag.position169
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- == -->
+            <div class="com-sm-3 col-md-3">
+                <div class="insight-inn text-center wow fadeInUp" data-wow-delay="1s">
+                    <a href="@Url.Content("~/Insights/Infographic")">
+                        <div class="insight-pic">
+                            <img src="@Url.Content("~/images/insight-infogra.jpg")" alt="" />
+                        </div>
+                        <div class="blog-innr">
+                            <h5>@ViewBag.position170</h5>
+                        </div>
+                    </a>
+                    <div class="blog-innr">
+                        <p>
+                            @ViewBag.position171
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- == -->
+            <div class="com-sm-3 col-md-3">
+                <div class="insight-inn text-center wow fadeInUp" data-wow-delay="1.5s">
+                    <a href="@Url.Content("~/Insights/Trending")">
+                        <div class="insight-pic">
+                            <img src="@Url.Content("~/images/insight-trend.jpg")" alt="" />
+                        </div>
+                        <div class="blog-innr">
+                            <h5>@ViewBag.position172</h5>
+                        </div>
+                    </a>
+                    <div class="blog-innr">
+                        <p>
+                           @ViewBag.position173
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end insight -->
+
+<script src="@Url.Content("~/js/jquery-1.11.3.js")"></script>
+<script>
+    $(document).ready(function () {
+        $(".footmenu").each(function (e) {
+            if (e == '4') {
+                $(this).addClass('current-menu-item');
+            }
+        });
+
+        $(".headmenu").each(function (e) {
+            if (e == '4') {
+                $(this).addClass('current-menu-item');
+            }
+        });
+    });
+</script>

@@ -1,0 +1,142 @@
+﻿@{
+    ViewBag.Title = "Solutions";
+    Layout = "~/Views/Shared/_LayoutAbout.cshtml";
+}
+
+<!-- banner -->
+<section class="bannr-sec solution-bannr">
+    <div class="bannr-outr">
+        <div class="container">
+            <div class="bannr-innr wow fadeInUp" data-wow-delay="0.5s">
+                <h1>@ViewBag.position66</h1>
+            </div>
+        </div>
+    </div>
+    <!-- new mouse start -->
+    <div class="ng-scope" id="content-view">
+        <div style="display: block;" class="ng-scope" id="mouse-scroll">
+            <div><span class="unu"> </span> <span class="doi"> </span> <span class="trei"> </span> </div>
+        </div>
+    </div>
+    <!-- new mouse ends -->
+</section>
+<!-- end banner -->
+<!-- long-term -->
+<section class="hm long-term text-center">
+    <div class="container">
+        <div class="long-outr commn-outr">
+            <p>
+               @ViewBag.position67
+            </p>
+        </div>
+    </div>
+</section>
+<!-- end long-term -->
+<!-- solutions -->
+<section class="sol-sec">
+    <div class="seperate-sec">
+        <img src="@Url.Content("~/images/financial-bg1.jpg")" alt="" />
+        <div class="seperate-outr">
+            <div class="container">
+                <div class="seperate-innr wow fadeInRight" data-wow-delay="0.5s">
+                    <div class="seperate-pic">
+                        <div class="seperate-pic-innr">
+                            <img src="@Url.Content("~/images/finance-icon.png")" alt="" />
+                        </div>
+                    </div>
+                    <div class="seperate-txt">
+                        <h5>@ViewBag.position68</h5>
+                        <p>
+                            @ViewBag.position69
+                        </p>
+                        <a class="commn-bttn whte" href="@Url.Content("~/Solutions/FinancialPlanning")">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==== -->
+    <div class="seperate-sec">
+        <img src="@Url.Content("~/images/goal-bg1.jpg")" alt="" />
+        <div class="seperate-outr">
+            <div class="container">
+                <div class="seperate-innr wow fadeInLeft" data-wow-delay="0.5s">
+                    <div class="seperate-pic">
+                        <div class="seperate-pic-innr">
+                            <img src="@Url.Content("~/images/goal-icon.png")" alt="" />
+                        </div>
+                    </div>
+                    <div class="seperate-txt">
+                        <h5>@ViewBag.position70</h5>
+                        <p>
+                           @ViewBag.position71 
+                        </p>
+                        <a class="commn-bttn" href="@Url.Content("~/Solutions/GoalPlanning")">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==== -->
+    <div class="seperate-sec">
+        <img src="@Url.Content("~/images/investing-bg1.jpg")" alt="" />
+        <div class="seperate-outr">
+            <div class="container">
+                <div class="seperate-innr wow fadeInRight" data-wow-delay="0.5s">
+                    <div class="seperate-pic">
+                        <div class="seperate-pic-innr">
+                            <img src="@Url.Content("~/images/invest-icon.png")" alt="" />
+                        </div>
+                    </div>
+                    <div class="seperate-txt">
+                        <h5>@ViewBag.position72</h5>
+                        <p>
+                            @ViewBag.position73
+                        </p>
+                        <a class="commn-bttn whte" href="@Url.Content("~/Solutions/RetirementPlanning")">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==== -->
+    <div class="seperate-sec">
+        <img src="@Url.Content("~/images/tax-bg1.jpg")" alt="" />
+        <div class="seperate-outr">
+            <div class="container">
+                <div class="seperate-innr wow fadeInLeft" data-wow-delay="0.5s">
+                    <div class="seperate-pic">
+                        <div class="seperate-pic-innr">
+                            <img src="@Url.Content("~/images/tax-icon.png")" alt="" />
+                        </div>
+                    </div>
+                    <div class="seperate-txt">
+                        <h5>@ViewBag.position74</h5>
+                        <p>
+                           @ViewBag.position75 
+                        </p>
+                        <a class="commn-bttn" href="@Url.Content("~/Solutions/TaxPlanning")">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end solutions -->
+
+<script src="@Url.Content("~/js/jquery-1.11.3.js")"></script>
+<script>
+    $(document).ready(function () {
+        $(".footmenu").each(function (e) {
+            if (e == '1') {
+                $(this).addClass('current-menu-item');
+            }
+        });
+
+        $(".headmenu").each(function (e) {
+            if (e == '1') {
+                $(this).addClass('current-menu-item');
+            }
+        });
+    });
+</script>

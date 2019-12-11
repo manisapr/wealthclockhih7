@@ -1,0 +1,88 @@
+﻿@{
+    ViewBag.Title = "Ebook";
+    Layout = "~/Views/Shared/_LayoutIndex.cshtml";
+}
+<style>
+    li.current-menu-item > a {
+        color: #0caea3 !important;
+    }
+</style>
+<!-- heading -->
+<section class="trend-bnnr">
+    <div class="container">
+        <div class="trend-inn">
+            <h1>Ebooks</h1>
+        </div>
+    </div>
+</section>
+<!-- end heading -->
+<!-- trending -->
+<section class="trendng-sec">
+    <div class="container">
+        <div class="commn-outr">
+            <div class="" id="mainKnowledgeDiv">
+
+                <div class="">
+                    <div class="blog-sec knbytvid">
+
+                        <div class="blog-innr">
+
+
+
+
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-3">
+                                    <div class="video-inner mutu_sahi">
+                                        <h4 class="ebook_title">Mutual Fund Sahi Hai</h4>
+                                        <a href="@Url.Content("https://www.wealthclockadvisors.com/Ebooks/Mutual Funds Sahi Hai_final-compressed.pdf")" target="_blank">
+                                            <img src="@Url.Content("https://www.wealthclockadvisors.com/images/pdf1.png")" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-3">
+                                    <div class="video-inner mutu_sahi">
+                                        <h4 class="ebook_title">SIP Everything You Wanted to Know</h4>
+                                        <a href="@Url.Content("https://www.wealthclockadvisors.com/Ebooks/SIP Everything You Wanted to Know_final_17_9_18_compressed.pdf")" target="_blank">
+                                            <img src="@Url.Content("https://www.wealthclockadvisors.com/images/pdf2.png")" />
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <!-- load-more -->
+                <div class="col-md-12 text-center hide" id="div_loader">
+                    <div><img src="~/images/loader.gif" alt="" /></div>
+                </div>
+                <!-- end load-more -->
+            </div>
+        </div>
+   </div>
+</section>
+<!-- end trending -->
+<script src="@Url.Content("~/js/jquery-1.11.3.js")"></script>
+<script>
+    $('.rght-menu').addClass('inn-menu');
+    $(document).ready(function () {
+        $(".footmenu").each(function (e) {
+            if (e == '4') {
+                $(this).addClass('current-menu-item');
+            }
+        });
+
+        $(".headmenu").each(function (e) {
+            if (e == '4') {
+                $(this).addClass('current-menu-item');
+            }
+        });
+
+    });
+</script>
+
+<!--Lazy Loader....-->

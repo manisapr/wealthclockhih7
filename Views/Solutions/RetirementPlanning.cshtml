@@ -1,0 +1,162 @@
+﻿@{
+    ViewBag.Title = "RetirementPlanning";
+    Layout = "~/Views/Shared/_LayoutAbout.cshtml";
+}
+<style>
+    head {
+        display: block !important;
+    }
+</style>
+<!-- banner -->
+<section class="bannr-sec retirement">
+    <div class="bannr-outr">
+        <div class="container">
+            <div class="bannr-innr wow fadeInUp" data-wow-delay="0.5s">
+                <h1>@ViewBag.position88</h1>
+                <!-- <h5>Proin gravida nibh vel velit auctor alique enean sollicitudin</h5> -->
+            </div>
+        </div>
+    </div>
+    <!-- end banner -->
+    <!-- new mouse start -->
+    <div class="ng-scope" id="content-view">
+        <div style="display: block;" class="ng-scope" id="mouse-scroll">
+            <div><span class="unu"> </span> <span class="doi"> </span> <span class="trei"> </span> </div>
+        </div>
+    </div>
+    <!-- new mouse ends -->
+</section>
+<!-- long-term -->
+<section class="hm long-term text-center">
+    <div class="container">
+        <div class="long-outr commn-outr">
+            <p>
+                @ViewBag.position89
+            </p>
+        </div>
+    </div>
+</section>
+<!-- end long-term -->
+<!-- </figure> -->
+<!-- retirement plans -->
+<section class="retirement-plan">
+    <div class="container">
+        <div class="commn-outr wow fadeInUp">
+            <p>@ViewBag.position90</p>
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <div class="retirement-factor  wow fadeInUp">
+                        <img src="~/images/retirement-01.jpg" alt="" />
+                        <div class="retirement-txt">
+                            <span class="suga">Factor No. 1</span>
+                            <h4>@ViewBag.position91</h4>
+                            <p>
+                              @ViewBag.position92
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <div class="retirement-factor  wow fadeInUp">
+                        <img src="~/images/retirement-02.jpg" alt="" />
+                        <div class="retirement-txt">
+                            <span class="suga">Factor No 2</span>
+                            <h4>@ViewBag.position93</h4>
+                            <p>
+
+                                @ViewBag.position94
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <div class="retirement-factor  wow fadeInUp">
+                        <img src="~/images/retirement-03.jpg" alt="" />
+                        <div class="retirement-txt">
+                            <span class="suga">Factor No. 3</span>
+                            <h4>@ViewBag.position95</h4>
+                            <p>
+
+                              @ViewBag.position96  
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <div class="retirement-factor  wow fadeInUp">
+                        <img src="~/images/retirement-04.jpg" alt="" />
+                        <div class="retirement-txt">
+                            <span class="suga">Factor No 4</span>
+                            <h4>@ViewBag.position97</h4>
+                            <p>
+
+                             @ViewBag.position98   
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end retirement plans -->
+<!-- video -->
+<figure class="wow fadeInUp">
+    <div class="commn-outr vdo-sec clearfix">
+        <div class="container">
+            <div class="col-sm-6 col-md-6">
+                <div class="vdo-innr">
+                    <p>
+                       @ViewBag.position99
+                    </p>
+                    <p>
+                       @ViewBag.position100
+                    </p>
+                </div>
+            </div>
+            <!-- == -->
+            <div class="col-sm-6 col-md-6">
+                <div class="vdo-innr-vdo">
+                    <iframe src="https://www.youtube.com/embed/iLkIHFRVog8"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</figure>
+<article class="pension-advice">
+    <div class="container">
+        <p>
+            <strong>@ViewBag.position101</strong>
+        </p>
+    </div>
+</article>
+
+<!-- end video -->
+
+<script src="@Url.Content("~/js/jquery-1.11.3.js")"></script>
+<script>
+    $(document).ready(function () {
+        $(".footmenu").each(function (e) {
+            if (e == '1') {
+                $(this).addClass('current-menu-item');
+            }
+        });
+
+        $(".headmenu").each(function (e) {
+            if (e == '1') {
+                $(this).addClass('current-menu-item');
+            }
+        });
+    });
+</script>

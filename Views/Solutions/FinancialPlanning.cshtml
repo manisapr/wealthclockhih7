@@ -1,0 +1,170 @@
+﻿@{
+    ViewBag.Title = "FinancialPlaning";
+    Layout = "~/Views/Shared/_LayoutAbout.cshtml";
+}
+
+<!-- <figure class="top-scren"> -->
+<!-- banner -->
+<section class="bannr-sec finance">
+    <div class="bannr-outr">
+        <div class="container">
+            <div class="bannr-innr wow fadeInUp" data-wow-delay="0.5s">
+                <h1>@ViewBag.position76</h1>
+               
+            </div>
+        </div>
+    </div>
+    <!-- end banner -->
+    <!-- new mouse start -->
+    <div class="ng-scope" id="content-view">
+        <div style="display: block;" class="ng-scope" id="mouse-scroll">
+            <div><span class="unu"> </span> <span class="doi"> </span> <span class="trei"> </span> </div>
+        </div>
+    </div>
+    <!-- new mouse ends -->
+</section>
+
+<!-- long-term -->
+<section class="hm long-term text-center">
+    <div class="container">
+        <div class="long-outr commn-outr">
+            <p>
+              @ViewBag.position77  
+            </p>
+            <!-- <a class="commn-bttn whte wow fadeInUp" data-wow-delay="0.5s" href="javascript:void(0)">read more</a> -->
+        </div>
+    </div>
+</section>
+<!-- end long-term -->
+<!-- financial -->
+<section class="why-us-sec wow fadeInUp clearfix">
+    <div class="commn-outr financial-sec">
+        <div class="container">
+            <div class="why-txt">
+                <p>
+                    @ViewBag.position78
+                </p>
+                <p>
+                   @ViewBag.position79
+                </p>
+                <p>                  
+                  @ViewBag.position80
+                </p>
+                <p>
+                   @ViewBag.position81
+                </p>
+            </div>
+            <div class="why-pic">
+                <img src="@Url.Content("~/images/financial-plan.png")" alt="" />
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end financial -->
+<!-- financial tab -->
+<figure class="financial-tab wow fadeInUp clearfix">
+    <div class="container">
+        <div class="commn-outr">
+            <ul class="nav nav-tabs responsive">
+                <li class="active"><a data-toggle="tab" href="#menu1">Appraise</a></li>
+                <li><a data-toggle="tab" href="#menu2">Goals</a></li>
+                <li><a data-toggle="tab" href="#menu3">Strategy</a></li>
+                @*<li><a data-toggle="tab" href="#menu4">Foundation</a></li>*@
+                <li><a data-toggle="tab" href="#menu5">Balance</a></li>
+            </ul>
+            <div class="tab-content responsive">
+                <div id="menu1" class="tab-pane fade in active">
+                    <div class="financial-outr">
+                        <div class="financial-txt">
+                            <p>
+                               @ViewBag.position82
+                            </p>
+
+                        </div>
+                        <div class="fianancial-graph">
+                            <img src="@Url.Content("~/images/financial-graph.png")" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div id="menu2" class="tab-pane fade">
+                    <div class="financial-outr">
+                        <div class="financial-txt">
+                            <p>
+                                @ViewBag.position83
+                            </p>
+
+                        </div>
+                        <div class="fianancial-graph">
+                            <img src="@Url.Content("~/images/Goal.png")" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                    <div class="financial-outr">
+                        <div class="financial-txt">
+                            <p>
+                                @ViewBag.position84
+                            </p>
+
+
+                        </div>
+                        <div class="fianancial-graph">
+                            <img src="@Url.Content("~/images/strategy.png")" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div id="menu5" class="tab-pane fade">
+                    <div class="financial-outr">
+                        <div class="financial-txt">
+                            <p>
+                                @ViewBag.position85
+                            </p>
+
+                        </div>
+                        <div class="fianancial-graph">
+                            <img src="@Url.Content("~/images/balance.png")" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</figure>
+<!-- end financial tab -->
+
+<article class="finance-brief wow fadeInUp">
+    <div class="container">
+        <div class="finance-brief-inn">
+            <p>
+                <strong>No two financial plans are exactly the same.</strong> That’s why seeking financial advice is so important. According to the
+                Industry Research, 50% of India’s are concerned they do not have enough money to retire on. In our experience,
+                we also know that those who do have enough, are keen to ensure the money they have lasts throughout retirement
+                and can be transferred safely to the next generation.
+            </p>
+            <p>
+                Our financial planners offer services to those who are simply trying to improve their current wealth position and secure their future.
+            </p>
+        </div>
+    </div>
+</article>
+<script src="@Url.Content("~/js/jquery-1.11.3.js")"></script>
+<script>
+
+    $(document).ready(function () {
+        $(".footmenu").each(function (e) {
+            if ($(this).text().trim() == '- Solutions') {
+                $(this).addClass('current-menu-item');
+            }
+        });
+
+        $(".headmenu").each(function (e) {
+            if (e == '1') {
+                $(this).addClass('current-menu-item');
+            }
+        });
+    });
+</script>
+
+

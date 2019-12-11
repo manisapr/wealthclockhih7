@@ -1,0 +1,130 @@
+﻿@{
+    ViewBag.Title = "GoalPlaning";
+    Layout = "~/Views/Shared/_LayoutAbout.cshtml";
+}
+
+<!-- <figure class="top-scren"> -->
+<!-- banner -->
+<section class="bannr-sec goal-plan">
+    <div class="bannr-outr">
+        <div class="container">
+            <div class="bannr-innr wow fadeInUp" data-wow-delay="0.5s">
+                <h1>Goal Planning</h1>
+                <!-- <h5>Proin gravida nibh vel velit auctor alique enean sollicitudin</h5> -->
+            </div>
+        </div>
+    </div>
+    <!-- end banner -->
+    <!-- new mouse start -->
+    <div class="ng-scope" id="content-view">
+        <div style="display: block;" class="ng-scope" id="mouse-scroll">
+            <div><span class="unu"> </span> <span class="doi"> </span> <span class="trei"> </span> </div>
+        </div>
+    </div>
+    <!-- new mouse ends -->
+</section>
+
+<!-- long-term -->
+<section class="hm long-term text-center">
+    <div class="container">
+        <div class="long-outr commn-outr">
+            <p>
+              @ViewBag.position103 
+            </p>
+            <!-- <a class="commn-bttn whte wow fadeInUp" data-wow-delay="0.5s" href="javascript:void(0)">read more</a> -->
+        </div>
+    </div>
+</section>
+<!-- end long-term -->
+<!-- financial tab -->
+<figure class="goal-tab financial-tab wow fadeInUp clearfix">
+    <div class="container">
+        <ul class="nav nav-tabs responsive">
+            <li class="active"><a data-toggle="tab" href="#menu1">What is Goal planning</a></li>
+            <li><a data-toggle="tab" href="#menu2">How it works</a></li>
+            <li><a data-toggle="tab" href="#menu3">Advantages of Goal planning</a></li>
+        </ul>
+        <div class="tab-content responsive">
+            <div id="menu1" class="tab-pane fade in active">
+                <div class="financial-outr">
+                    <div class="financial-txt">
+                        <h3>What is Goal planning</h3>
+                        <p>
+                          @ViewBag.position105  
+                        </p>
+                        <p>
+                          @ViewBag.position106  
+                        </p>
+                        <p>
+                           @ViewBag.position107
+                        </p>
+                    </div>
+                    <div class="goal-pic">
+                        <img src="@Url.Content("~/images/goal-planig-3.jpg")" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <div class="financial-outr">
+                    <div class="financial-txt">
+                        <h3>How it works</h3>
+                        <p>
+                          @ViewBag.position109  
+                        </p>
+                        <p>
+                            @ViewBag.position110
+                        </p>
+                        <p>
+                            @ViewBag.position111
+                        </p>
+                    </div>
+                    <div class="goal-pic">
+                        <img src="@Url.Content("~/images/how-it-works-3.jpg")" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+                <div class="financial-outr">
+                    <div class="financial-txt">
+                        <h3>Advantages of Goal planning</h3>
+                        <p>
+                            @ViewBag.position113
+                        </p>
+                        <p>
+                            @ViewBag.position114
+                        </p>
+                        <h3>
+                           @ViewBag.position115
+                        </h3>
+                        <p>1. Maps your goals to optimized portfolios based on risk capacity and time horizon, resulting in high suitability correlation.</p>
+                        <p>2. Enhances decision making ability on investment products.</p>
+                        <p>3. Reduces asset flight due to downturn in market.</p>
+                        <p>4. Lowers retention risk as funds are periodically directed to new goals.</p>
+
+                    </div>
+                    <div class="goal-pic">
+                        <img src="@Url.Content("~/images/Advantage-4.jpg")" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</figure>
+<!-- end financial tab -->
+<script src="@Url.Content("~/js/jquery-1.11.3.js")"></script>
+<script>
+
+    $(document).ready(function () {
+        $(".footmenu").each(function (e) {
+            if ($(this).text().trim() == '- Solutions') {
+                $(this).addClass('current-menu-item');
+            }
+        });
+
+        $(".headmenu").each(function (e) {
+            if (e == '1') {
+                $(this).addClass('current-menu-item');
+            }
+        });
+    });
+</script>
